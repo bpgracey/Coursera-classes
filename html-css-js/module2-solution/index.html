@@ -1,0 +1,94 @@
+<html>
+  <head>
+    <title>HTML-CSS-JS module 2 solution</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    header {
+      text-align: center;
+      font-style:italic;
+      margin: 10px;
+    }
+
+    header > h1 {
+      font-style: normal;
+      font-size: 175%;
+    }
+
+    article > h1 {
+      position:relative;
+      right: 0px;
+      font-size: 125%;
+      text-align: right;
+      border: 1px solid black;
+    }
+
+    .row {
+      width: 100%;
+    }
+
+    .base {
+      position:relative;
+    }
+
+    @media(min-width: 992px) {
+      .col-lg {
+        float: left;
+        border: 1px solid black;
+        width: 33%;
+      }
+    }
+
+    @media(min-width: 768px) and (max-width: 991px) {
+      .col-md {
+        float: left;
+        border: 1px solid black;
+        width: 50%;
+      }
+    }
+
+    @media(max-width: 767px) {
+      .col-sm {
+        float: left;
+        border: 1px solid black;
+        width: 100%;
+      }
+    }
+    </style>
+  </head>
+
+  <body>
+    <header class="row">
+      <h1>Lorem Ipsum</h1>
+      with apologies to <a href="http://www.lipsum.com/">the Lorem Ipsum site</a>
+    </header>
+
+    <section class="base">
+      <article class="col-lg col-md col-sm">
+        <h1>Unum</h1>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar odio sit amet ex bibendum congue. Sed faucibus nunc in sem venenatis, sit amet pharetra metus commodo. Mauris a convallis nisl, nec feugiat dolor. Donec sit amet turpis ac enim convallis posuere. Proin in cursus nibh. Sed blandit mi non elementum vulputate. Nulla facilisi.
+      </article>
+
+      <article class="col-lg col-md col-sm">
+        <h1>Duo</h1>
+        Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce sagittis metus pretium, accumsan ligula et, feugiat orci. Vivamus pharetra massa vitae elit viverra elementum. Maecenas auctor vehicula consectetur. Aenean dignissim nibh et mauris vehicula eleifend iaculis id nulla. Phasellus eget augue feugiat magna convallis aliquet ut at orci. Proin auctor, dui quis convallis facilisis, sapien urna porta quam, at ornare magna magna eu urna.
+      </article>
+
+      <article class="col-lg col-md col-sm">
+        <h1>Tres</h1>
+        In id dui quis turpis viverra aliquam. In in quam odio. Maecenas rhoncus, metus in eleifend porttitor, diam nulla commodo mi, nec faucibus mauris ligula a leo. Nullam tincidunt consequat velit in consectetur. Cras vel vestibulum sem. Integer imperdiet, ipsum eu pulvinar varius, ante mauris condimentum risus, ut suscipit risus lacus quis lorem. Sed tempus metus in nisl pulvinar faucibus. Nam id felis ac ex volutpat venenatis. Etiam feugiat sem cursus, bibendum augue eget, eleifend libero. Vestibulum mi risus, aliquam at tempus semper, mattis eget ante. Pellentesque euismod justo et ultrices consequat. Phasellus congue nunc ac tellus tempor blandit. Aliquam interdum lacinia risus, vitae ornare tortor semper auctor. Sed vitae tellus a ante laoreet volutpat. Nulla faucibus elit id nisl volutpat ultricies.
+      </article>
+    </section>
+
+  </body>
+</html>
